@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 107);
+}
+
+.blurred-image-1 {
+    background-image: url('https://fyf.tac-cdn.net/images/products/large/BF116-11KM_R.jpg?auto=webp&quality=60&width=690" class="d-block" alt="...');
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.blurred-image-2 {
+    background-image: url('https://veldkampsflowers.imgix.net/images/item/SweetBabyGirlLarge2017-18070941349.jpg?w=950&auto=format');
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.blurred-image-3 {
+    background-image: url('https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1644465951/vendor/6986/catalog/product/2/0/20210823062655_file_6123e86f05834_6123e8f100f62._6126f0f32f703._6126f0f54a897..jpg');
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+
+header {
+    color: white;
+    height: 40vh;
+    margin-left: 10rem;
+}
+
+.header-dragon {
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    z-index: -10;
+}
+
+h1 {
+    padding-top: 4rem;
+}
+
+.carousel {
+    width: 50%;
+}
+
+.tabs {
+    background-color: rgb(0, 0, 107);
+    color: white;
+    padding: 5rem 4rem 4rem;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-link:hover {
+    color: lightgray;
+}
+
+.nav-link:focus {
+    color: lightgrey;
+}
+
+.tabcontent {
+    padding: 1rem 1rem;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bookshelf</title>
+</head>
+<body>
+
+    <!-- HEADER SECTION - HEADING AND DESCRIPTION OF SITE -->
+    <header>
+        <h1>Bookshelf</h1>
+        <img src="images/dragon-decal3.png" alt="" class="header-dragon">
+    </header>
+
+
+    <!-- CAROUSEL WITH THREE SLIDES - EXAMPLES OF MEDIA LISTED ON SITE -->
+    <section id="carouselExampleSlidesOnly" class="carousel slide m-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- FIRST CAROUSEL ITEM -->
+            <div class="carousel-item active">
+                <div class="d-flex align-items-center">
+                    <div class="blurred-image-1"></div>
+                    <p class="w-50 text-white">A few things about the site Bookshelf. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quas nobis inventore illo vitae officiis assumenda modi. Dolorem ipsa est, reprehenderit iste hic repellat debitis laboriosam, illo vero, exercitationem porro?</p>
+                </div>
+            </div>
+
+            <!-- SECOND CAROUSEL ITEM -->
+            <div class="carousel-item">
+                <div class="d-flex align-items-center">
+                    <div class="blurred-image-2"></div>
+                    <p class="w-50 text-white">A few things about how to use the site Bookshelf. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quas nobis inventore illo vitae officiis assumenda modi. Dolorem ipsa est, reprehenderit iste hic repellat debitis laboriosam, illo vero, exercitationem porro?</p>
+                </div>
+            </div>
+
+
+
+            <!-- THIRD CAROUSEL ITEM -->
+            <div class="carousel-item">
+                <div class="d-flex align-items-center">
+                    <div class="blurred-image-3"></div>
+                    <p class="w-50 text-white">A little bit more about the site Bookshelf. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quas nobis inventore illo vitae officiis assumenda modi. Dolorem ipsa est, reprehenderit iste hic repellat debitis laboriosam, illo vero, exercitationem porro?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- TABS SECTION - TABS AT BOTTOM OF SCREEN TO SHOW REGISTER, LOGIN, AND CONTACT FORMS -->
+    <section class="tabs">
+        <div>
+
+            <!-- TABS TO CLICK -->
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="openTab(event, 'Register')">Register</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openTab(event, 'Login')">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openTab(event, 'Contact')">Contact</a>
+                </li>
+            </ul>
+
+            <!-- REGISTER TAB CONTENT -->
+            <div id="Register" class="tabcontent">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h3>Register</h3>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="images/tree-decal.png" alt="" class="register-tree">
+                    </div>
+                </div>
+            </div>
+              
+            <!-- LOGIN TAB CONTENT -->
+            <div id="Login" class="tabcontent">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h3>Login</h3>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="images/mountain-decal.png" alt="">
+                    </div>
+                </div>
+            </div>
+              
+            <!-- CONTACT TAB CONTENT -->
+            <div id="Contact" class="tabcontent">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h3>Contact</h3>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Submit">
+                        </form> 
+                    </div>
+                    <div>
+                        <img src="images/heli-decal.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    function openTab(evt, tabName) {
+        event.preventDefault();
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</html>

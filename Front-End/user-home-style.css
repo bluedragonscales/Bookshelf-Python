@@ -1,0 +1,22 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #00006b;
+}
+
+.left-bookend {
+    background-image: url('images/left-bookend2.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 110px;
+    border-color: white;
+}
+
+.right-bookend {
+    background-image: url('images/right-bookend3.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 110px;
+    border-color: white;
+}
